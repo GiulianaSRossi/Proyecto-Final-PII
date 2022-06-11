@@ -10,6 +10,7 @@ private:
 	
 public:
 	ProfecionalC(int, float);
+	ProfecionalC();
 	
 	int get_numeroTarjeta();
 	float get_limiteC();
@@ -24,6 +25,9 @@ ProfecionalC::ProfecionalC(int nt, float lc) {
 	
 	numeroTarjeta = nt;
 	limiteC = lc;	
+	
+}
+ProfecionalC::ProfecionalC() {
 	
 }
 int ProfecionalC::get_numeroTarjeta() {

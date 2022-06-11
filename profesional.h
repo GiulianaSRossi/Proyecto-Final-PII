@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-class Profesional{
+class Profesional:public ProfesionalC {
 	
 private:
 	
@@ -23,7 +23,7 @@ public:
 	void mostrarDatos();
 };
 
-Profesional::Profesional(string t, strig a, float tiem) {
+Profesional::Profesional(string t, string a, float tiem) {
 
 	titulo = t;
 	actividad = a;
@@ -51,7 +51,4 @@ void Profesional::set_tiempo(float tiem) {
 	tiempo = tiem;
 }
 
-class ProfesionalC:public Profesional{        //HEREDAR CLASE ProfesionalC
-public: 
-	
-};
+

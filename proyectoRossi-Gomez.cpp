@@ -9,86 +9,14 @@ composicion.
 */
 
 #include <iostream>
+#include "administrador.h"
+#include "cuentaSueldo.h"
+#include "persona.h"
+#include "profesional.h"
+#include "profesionalCuenta.h"
+#include "trabajador.h"
 using namespace std;
 
-class Trabajador{
-	
-protected:
-//especifica el acceso a los miembros de clase de la lista 
-//hasta el siguiente especificador
-	string nombre;
-	string apellido;
-	int dni;
-	int numeroEmpleado;
-	float salario;
-	string profesion;
-	
-public:
-	Trabajador (string, string, int, int, float, string);
-	
-	string get_nombre();
-	string get_apellido();
-	int get_dni();
-	int get_numeroEmpleado();
-	float get_salario();
-	string get_profesion();
-	
-	void set_nombre(string);
-	void set_apellido(string);
-	void set_dni(int);
-	void set_numeroEmpleado(int);
-	void set_salario(float);
-	void set_profesion(string);
-	
-	void mostrarDatos();
-};
-
-Trabajador::Trabajador(string nom, string ap, int d, int numE, float s, string p) {
-	nombre = nom;
-	apellido = ap;
-	dni = d;
-	numeroEmpleado = numE;
-	salario = s;
-	profesion = p;
-}
-
-string Trabajador::get_nombre() {
-	return nombre;
-}
-string Trabajador::get_apellido() {
-	return apellido;
-}
-int Trabajador::get_dni() {
-	return dni;
-}
-int Trabajador::get_numeroEmpleado() {
-	return numeroEmpleado;
-}
-float Trabajador::get_salario() {
-	return salario;
-}
-string Trabajador::get_profesion() {
-	return profesion;
-}
-
-void Trabajador::set_nombre(string nom) {
-	nombre=nom;
-}
-void Trabajador::set_apellido(string ap) {
-	apellido=ap;
-}
-void Trabajador::set_dni(int DNI) {
-	dni=DNI;
-}
-void Trabajador::set_numeroEmpleado(int nmrEm) {
-	numeroEmpleado=nmrEm;
-}
-void Trabajador::set_salario(float slr) {
-	salario=slr;
-}
-void Trabajador::set_profesion(string prof) {
-	profesion=prof;
-}
 
 /*void Trabajador::Datos() {
 	cout << "Nombre: " << get_nombre()<< endl;
